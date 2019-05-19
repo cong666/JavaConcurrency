@@ -36,6 +36,7 @@ public class AccountResourceManager2 {
         return ResourceManagerInstance.INSTANCE.getInstance();
     }
 
+    //can only do the transfer when we get the acc1 and acc2 successfully
     public boolean tryGetResource(Account2 acc1, Account2 acc2) {
         synchronized (this) {
             //need use while here, once the thread is notified , the thread can continue to check the while condition
