@@ -21,6 +21,16 @@ public class ThreadPoolTest {
         executor.submit(new WorkerThread());
         executor.submit(new WorkerThread());
         executor.submit(new WorkerThread());
+        //如果任务过多的时候 任务会被reject
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
+        //executor.submit(new WorkerThread());
         executor.shutdown();
     }
 }
